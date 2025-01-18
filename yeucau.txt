@@ -1,0 +1,32 @@
+Yêu cầu phát triển Website chúc mừng sinh nhật
+Mục đích:
+Tạo một website chúc mừng sinh nhật độc đáo cho bạn gái nhân dịp tròn 22 tuổi.
+
+Trang đầu tiên (Trang nhập thông tin):
+
+Thiết kế giao diện:
+Trang đầu tiên phải có giao diện dễ thương, tông màu hồng hoặc pastel, phù hợp với chủ đề sinh nhật.
+Có tiêu đề chính: "Chào mừng bạn đến với trang chúc mừng sinh nhật đặc biệt!"
+Các trường thông tin cần nhập:
+Họ và Tên: Trường để người dùng nhập thông tin họ và tên, yêu cầu nhập đúng "Ngô Khánh Linh".
+Ngày tháng năm sinh: Trường nhập ngày sinh, yêu cầu nhập đúng 18/01/2003.
+Nút xác nhận:
+Khi thông tin được nhập chính xác, nút "Xác nhận" sẽ hiện lên, và khi nhấn, người dùng được chuyển đến trang tiếp theo.
+Nếu nhập sai thông tin, hiển thị thông báo lỗi: "Thông tin chưa chính xác. Vui lòng kiểm tra lại!"
+Trang thứ hai (Trang chúc mừng sinh nhật):
+
+Thiết kế giao diện:
+Trang này có giao diện chúc mừng sinh nhật với hình ảnh sinh động, bóng bay, bánh kem, và các hình nền lấp lánh.
+Nội dung hiển thị:
+Hiển thị dòng chữ lớn: "Chúc mừng sinh nhật Ngô Khánh Linh tròn 22 tuổi!"
+Dưới lời chúc có nút "Xem những kỷ niệm đẹp".
+Hiển thị hình ảnh:
+Khi người dùng bấm nút "Xem những kỷ niệm đẹp", một slideshow các hình ảnh đẹp của bạn gái sẽ xuất hiện, hiển thị lần lượt từng ảnh kèm hiệu ứng chuyển động mượt mà (fade, zoom in/out).
+Tính năng bổ sung (không bắt buộc):
+
+Nhạc nền: Chạy bài hát "Happy Birthday" nhẹ nhàng khi chuyển qua trang chúc mừng.
+Hiệu ứng pháo hoa hoặc bóng bay bay lên màn hình khi nhấn nút "Xác nhận".
+Yêu cầu kỹ thuật:
+
+Sử dụng HTML, CSS, JavaScript để tạo giao diện mượt mà và hiệu ứng hấp dẫn.
+Hỗ trợ hiển thị tốt trên cả máy tính và điện thoại.

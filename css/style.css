@@ -1,0 +1,157 @@
+/* Main container styles */
+.stApp {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    min-height: 100vh;
+}
+
+/* Birthday title styles */
+.birthday-title {
+    background: linear-gradient(45deg, #ff4081, #e91e63);
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
+    margin: 2rem auto;
+    max-width: 800px;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    overflow: hidden;
+}
+
+.birthday-title::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+    animation: shimmer 3s infinite linear;
+}
+
+/* Grid layout for memories */
+.memories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.memory-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.memory-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #ff4081, #e91e63);
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.memory-card img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.caption {
+    color: #e91e63;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, transparent, rgba(233, 30, 99, 0.1), transparent);
+    border-radius: 10px;
+}
+
+/* Button styles */
+.stButton button {
+    background: linear-gradient(45deg, #ff4081, #e91e63);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+}
+
+/* Animation keyframes */
+@keyframes shimmer {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .memories-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .memory-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .birthday-title {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}
+
+/* Form styles */
+.stForm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.stTextInput input, .stDateInput input {
+    border: 2px solid #ff4081;
+    border-radius: 10px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.stTextInput input:focus, .stDateInput input:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.2);
+} 

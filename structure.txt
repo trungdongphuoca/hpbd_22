@@ -1,0 +1,10 @@
+birthday-website/
+├── app.py
+├── requirements.txt
+├── assets/
+│   ├── images/
+│   │   ├── photo1.jpg
+│   │   ├── photo2.jpg
+│   │   └── ...
+│   └── music/
+│       └── happy-birthday.mp3 
